@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 :root {
     --main-color: rgb(0,123,255);
     --background: rgb(255,255,255);
@@ -7,7 +9,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -32,3 +34,43 @@ body {
     cursor: pointer;
 }
 
+.rules-cont {
+    border-radius: 5px;
+    background-color: var(--background);
+}
+
+.rules-cont h2 {
+    padding: 0 30px;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rules-cont ol {
+    padding: 15px 50px;
+}
+
+.rules-cont ol li {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.rules-cont ol li strong {
+    color: var(--main-color);
+}
+
+.rules-btns {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid lightgrey;
+}
+
+.rules-btns .btn {
+    margin: 0 5px;
+}
