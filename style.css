@@ -34,9 +34,20 @@ body {
     cursor: pointer;
 }
 
+.hide-start-btn {
+    display: none;
+}
+
 .rules-cont {
+    display: none;
     border-radius: 5px;
     background-color: var(--background);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    animation: cont-anim 0.5s ease;
+}
+
+.show-rules {
+    display: block;
 }
 
 .rules-cont h2 {
@@ -73,4 +84,95 @@ body {
 
 .rules-btns .btn {
     margin: 0 5px;
+}
+
+.quiz-cont {
+    max-width: 550px;
+    width: 100%;
+    display: none;
+    border-radius: 5px;
+    background-color: var(--background);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    animation: cont-anim 0.5s ease;
+}
+
+.show-quiz {
+    display: block;
+}
+
+.quiz-header {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz-timer {
+    padding: 8px;
+    color: rgb(0, 64, 133);
+    background-color: rgb(204, 229, 255);
+    border: 1px solid rgb(184, 218, 255);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.quiz-timer span {
+    margin-left: 6px;
+    display: block;
+    height: 30px;
+    width: 45px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    background: rgb(52, 58, 64);
+    border: 1px solid rgb(52, 58, 64);
+}
+
+.quiz-question {
+    padding: 10px 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.quiz-options {
+    padding: 5px 30px;
+    list-style: none;
+}
+
+.quiz-options li {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.quiz-options li.alert-info {
+    color: black;
+}
+
+.quiz-footer {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+}
+
+@keyframes cont-anim {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }

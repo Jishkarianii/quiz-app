@@ -11,9 +11,9 @@
     <title>Quiz App</title>
 </head>
 <body>
-    <button class="start-btn">Start Quiz</button>
+    <button class="start-btn" id="startBtn">Start Quiz</button>
     
-    <div class="rules-cont">
+    <div class="rules-cont" id="rules">
         <h2>Start Quiz Some Rules of this Quiz</h2>
         <ol>
             <li>You will have only <strong>15 seconds</strong> per each question.</li>
@@ -23,8 +23,26 @@
             <li>You'll get points on the basis of your correct answers.</li>
         </ol>
         <div class="rules-btns">
-            <button class="btn btn-outline-primary">Exit Quiz</button>
-            <button class="btn btn-primary">Continue</button>
+            <button class="btn btn-outline-primary" id="exitBtn">Exit Quiz</button>
+            <button class="btn btn-primary" id="continueBtn">Continue</button>
+        </div>
+    </div>
+    
+    <div class="quiz-cont" id="quiz">
+        <div class="quiz-header">
+            <h2>Awesome Quiz Application</h2>
+            <div class="quiz-timer">Time Left <span id="timerCont">15</span></div>
+        </div>
+        <h2 class="quiz-question">1. What does HTML stand for?</h2>
+        <ul class="quiz-options">
+            <li class="alert alert-danger">Hyper Text Preprocessor</li>
+            <li class="alert alert-success">Hyper Text Markup Language</li>
+            <li class="alert alert-info">Hyper Text Multiple Language</li>
+            <li class="alert alert-info">Hyper Tool Multi Language</li>
+        </ul>
+        <div class="quiz-footer">
+            <div><strong>1</strong> of <strong>5</strong> Questions</div>
+            <button class="btn btn-primary" id="nextBtn">Next Que</button>
         </div>
     </div>
 </body>
