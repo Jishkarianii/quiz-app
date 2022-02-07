@@ -1,3 +1,6 @@
+import questions from "./questions.js"
+
+// All DOM variables are here
 const startBtn = document.getElementById("startBtn")
 const exitBtn = document.getElementById("exitBtn")
 const continueBtn = document.getElementById("continueBtn")
@@ -6,9 +9,11 @@ const quiz = document.getElementById("quiz")
 const timerCont = document.getElementById("timerCont")
 
 
+// All global variables are here
 let timer = 15;
 
 
+// Button event listeners
 startBtn.addEventListener("click", startQuiz)
 exitBtn.addEventListener("click", exitQuiz)
 continueBtn.addEventListener("click", continueQuiz)
