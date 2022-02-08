@@ -14,6 +14,7 @@
 }
 
 body {
+    padding: 15px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -137,8 +138,23 @@ body {
     border: 1px solid rgb(52, 58, 64);
 }
 
+.quiz-time-line-cont {
+    position: relative;
+    height: 3px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-time-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+}
+
 .quiz-question {
-    padding: 10px 30px;
+    padding: 30px 30px 10px 30px;
     font-size: 25px;
     font-weight: 600;
 }
@@ -155,6 +171,7 @@ body {
 
 .quiz-options li.alert-info {
     color: black;
+    background-color: transparent;
 }
 
 .quiz-footer {
@@ -165,9 +182,62 @@ body {
     border-top: 1px solid lightgrey;
 }
 
+.next-btn {
+    transition: 0.4s;
+    transform: scale(0.9);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show-next-btn {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+.complete-cont {
+    padding: 25px 30px;
+    max-width: 450px;
+    width: 100%;
+    display: none;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--background);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    animation: cont-anim 0.5s ease;
+}
+
+.show-complete-cont {
+    display: block;
+}
+
+.fa-crown {
+    padding: 30px 0;
+    color: var(--main-color);
+    font-size: 100px;
+}
+
+.complete-cont h3 {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.complete-btns {
+    padding: 20px 0;
+}
+
+.complete-btns .btn-primary,
+.complete-btns .btn-outline-primary {
+    margin: 0 5px;
+    padding: 8px 24px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 @keyframes cont-anim {
     from {
-        transform: scale(0.8);
+        transform: scale(0.9);
         opacity: 0;
     }
 
