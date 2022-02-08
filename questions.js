@@ -1,6 +1,7 @@
 const questions = [
     {
         numb: 1,
+        img: "./img/HTML.jpg",
         question: "What does HTML stand for?",
         answer: "Hyper Text Markup Language",
         options: [
@@ -12,6 +13,7 @@ const questions = [
     },
     {
         numb: 2,
+        img: "./img/CSS.jfif",
         question: "What does CSS stand for?",
         answer: "Cascading Style Sheet",
         options: [
@@ -23,6 +25,7 @@ const questions = [
     },
     {
         numb: 3,
+        img: "./img/PHP.jpg",
         question: "What does PHP stand for?",
         answer: "Hypertext Preprocessor",
         options: [
@@ -34,6 +37,7 @@ const questions = [
     },
     {
         numb: 4,
+        img: "./img/SQL.jpg",
         question: "What does SQL stand for?",
         answer: "Structured Query Language",
         options: [
@@ -45,6 +49,7 @@ const questions = [
     },
     {
         numb: 5,
+        img: "./img/XML.jpg",
         question: "What does XML stand for?",
         answer: "eXtensible Markup Language",
         options: [

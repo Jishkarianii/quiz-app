@@ -16,6 +16,7 @@ const complete = document.getElementById("complete")
 const replayBtn = document.getElementById("replayBtn")
 const quitBtn = document.getElementById("quitBtn")
 const timeLine = document.getElementById("timeLine")
+const quizBg = document.getElementById("quizBg")
 
 
 // All global variables are here
@@ -57,6 +58,7 @@ function continueQuiz() {
     quiz.classList.add("show-quiz")
 
     startTimer()
+    setQuestionAndOptions()
 }
 
 function nextQuiz() {
@@ -170,6 +172,7 @@ function startTimer() {
 
 function setQuestionAndOptions() {
     setQuestion.innerText = `${questions[questionCount].numb}. ${questions[questionCount].question}`;
+    quizBg.src = questions[questionCount].img;
     setOptions[0].innerText = questions[questionCount].options[0];
     setOptions[1].innerText = questions[questionCount].options[1];
     setOptions[2].innerText = questions[questionCount].options[2];
