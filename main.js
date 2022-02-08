@@ -122,6 +122,7 @@ function replayQuiz() {
     correctAnswerCount = 0;
 
     complete.classList.remove("show-complete-cont")
+    nextBtn.classList.remove("show-next-btn")
     quiz.classList.add("show-quiz")
 
     startTimer()
